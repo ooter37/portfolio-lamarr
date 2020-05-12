@@ -1,0 +1,52 @@
+.youtube-container {
+    /* background-color: red;
+    width: 500px;
+    height: 200px; */
+}
+
+.list-item {
+    text-align: left;
+}
+.work-link-icon {
+    height: 35px;
+    width: 35px;
+    /* background-color: red; */
+    margin-right: 5px;
+}
+.project-box {
+    border: 1px solid black;
+}
+
+.label-icon-container {
+    /* background-color: red; */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.skill-container {
+    /* background-color: blue; */
+    /* width: 99%;
+    height: 99%; */
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+/* .skill-icons {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+} */
+.skill-labels {
+    /* margin-top: 0 !important; */
+    margin-bottom: 0;
+    /* padding-top: 0 !important;
+    padding-bottom: 0 !important; */
+}

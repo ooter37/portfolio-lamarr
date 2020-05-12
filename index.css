@@ -44,8 +44,27 @@
     align-items: flex-start; */
     height: 900px;
 }
-
-
+.contact-list {
+    margin-top: 20px;
+    list-style-type: none;
+    /* background-color: red; */
+    width: 300px;
+    text-align: left;
+}
+.contact-link {
+    text-decoration: none !important;
+    margin-top: 10px;
+    /* color: darkgrey; */
+    /* text-align: left; */
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* SKILLS */
 .skill-container {
@@ -53,10 +72,15 @@
     /* width: 99%;
     height: 99%; */
     display: flex;
+    flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	align-content: flex-start;
+    align-content: flex-start;
+    margin-left: 20px;;
+}
+.skill-group-container {
+    display: flex;
 }
 .label-icon-container {
     /* background-color: red; */
@@ -76,9 +100,7 @@
     padding-bottom: 0 !important;
 } */
 .skill-labels {
-    /* margin-top: 0 !important; */
     margin-bottom: 0;
-    /* padding-top: 0 !important;
-    padding-bottom: 0 !important; */
+    line-height: normal;
 }
 /* END SKILLS */

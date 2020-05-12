@@ -1,3 +1,5 @@
+
+
 .youtube-container {
     /* background-color: red;
     width: 500px;
@@ -13,10 +15,49 @@
     /* background-color: red; */
     margin-right: 5px;
 }
-.project-box {
-    border: 1px solid black;
+
+.welcome-message {
+    /* background-color: red !important;s */
+    /* float: right !important; */
+    position: absolute;
+    top: 50px;
+    margin-left: 0 auto;
+    margin-right: 0 right;
+    text-align: center;
+    color: white;
+    text-shadow:
+    0.05em 0 black,
+    0 0.05em black,
+    -0.05em 0 black,
+    0 -0.05em black,
+    -0.05em -0.05em black,
+    -0.05em 0.05em black,
+    0.05em -0.05em black,
+    0.05em 0.05em black;
+    width: 80%;
+    /* word-wrap: break-word; */
+}
+.welcome-message-container {
+    /* background-color: green !important; */
+    /* display: flex !important;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    height: 900px;
 }
 
+
+
+/* SKILLS */
+.skill-container {
+    /* background-color: blue; */
+    /* width: 99%;
+    height: 99%; */
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
 .label-icon-container {
     /* background-color: red; */
     width: 100px;
@@ -27,16 +68,6 @@
     align-items: center;
     margin-top: 10px;
     margin-left: 10px;
-}
-.skill-container {
-    /* background-color: blue; */
-    /* width: 99%;
-    height: 99%; */
-    display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
 }
 /* .skill-icons {
     margin-top: 0 !important;
@@ -50,3 +81,4 @@
     /* padding-top: 0 !important;
     padding-bottom: 0 !important; */
 }
+/* END SKILLS */

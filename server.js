@@ -78,3 +78,8 @@ app.listen(4005, () => console.log(`Running on port 4005`))
 
 // sudo ln -s /etc/nginx/sites-available/portfolio-lamarr /etc/nginx/sites-enabled/
 // sudo ln -s /etc/nginx/sites-available/sleep-like-a-log /etc/nginx/sites-enabled/
+
+
+
+// sudo rm -rf /var/www/portfolio-lamarr
+// sudo rm -rf /var/www/sleep-like-a-log

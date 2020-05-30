@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./reset.css" />
 		<link rel="stylesheet" href="./assets/css/modalImage.css" />
 	</head>
 	<body class="is-preload">
@@ -30,11 +31,11 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Work</span></a></li>
-								<li><a href="#skills" id="skills-link"><span class="icon solid fa-laptop-code">Skills</span></a></li>
-								<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li class='nav-link-list'><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li class='nav-link-list'><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Work</span></a></li>
+								<li class='nav-link-list'><a href="#skills" id="skills-link"><span class="icon solid fa-laptop-code">Skills</span></a></li>
+								<!-- <li class='nav-link-list'><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
+								<li class='nav-link-list'><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 							</ul>
 						</nav>
 
@@ -62,9 +63,9 @@
 					<section id="top" class="one dark cover welcome-message-container">
 						<div class="container welcome-message">
 
-							<header>
+							<header className='intro-header'>
 								<h2>Welcome to my portfolio. I'm Derek Lamarr.</h2>
-								<p>I'm a full stack web developer with a passion for coding. My 'stack' consists of React, Express, PostgreSQL, and Node,
+								<p class='top-about-me'>I'm a full stack web developer with a passion for coding. My 'stack' consists of React, Express, PostgreSQL, and Node,
 									though I'm always learning new technologies and improving my knowledge-base.</p>
 							</header>
 
@@ -78,36 +79,39 @@
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
-							<header>
-								<h2>Work</h2>
-							</header>
-							<p>Below is a selection of my work. Each project has a link to the hosted website, as a well as a link to the Github repo.</p>
-							<div class="row project-box">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<div class='work-image-links-container'>
-											<h4>Sleep Like A Log</h4>
-											<img id="myImg" src="images/sleep-like-a-log.png" alt="Sleep Like A Log" style="width:100%;max-width:400px">
-											<div id="myModal" class="modal">
-												<span class="close">&times;</span>
-												<img class="modal-content" id="img01">
-												<div id="caption"></div>
-											</div>
-											<ul class='work-links'>
-												<li class='list-item'>
-													<i class="fab fa-github fa-lg work-link-icon"></i><a href='https://github.com/ooter37'> View on Github</a>
-												</li>
-												<li class='list-item'>
-													<i class="fas fa-database work-link-icon"></i><a href='http://157.245.232.230:4000/#/'> Visit Hosted Project</a>
-												</li>
-											</ul>
-										</div>
-									</article>
+							<h2>Work</h2>
+						</header>
+						<p>A selection of my work. Each project has a links to the hosted website and the Github repo.</p>
+						<br/>
+						<br/>
+						<div class='project-card'>
+							<div class='project-box'>
+								<h4 class='project-title'>Prop Aid</h4>
+								<p class='project-detail-text'>Property management website. Track properties, servicemen, renters, and more.</p>
+								<div class="iframe-container">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/DKMcryL_Muk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/iwaeM6POP9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<div class='work-links'>
+										<i class="fab fa-github fa-lg work-link-icon"></i><a href='https://github.com/ooter37/property-management'>View on Github</a>
+										<i class="fas fa-database work-link-icon"></i><a href='http://157.245.232.230:4244/#/'> Website</a>
 								</div>
 							</div>
+						</div>
+						<br/>
+						<br/>
+						<div class='project-card'>
+							<div class='project-box'>
+								<h4 class='project-title'>Sleep Like A Log</h4>
+								<p class='project-detail-text'>Sleep tracking application for parents to log the sleeps and naps of their new babies.</p>
+								<div class="iframe-container">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/iwaeM6POP9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class='work-links'>
+										<i class="fab fa-github fa-lg work-link-icon"></i><a href='https://github.com/ooter37/sleep-like-a-log'> Github</a>
+										<i class="fas fa-database work-link-icon"></i><a href='http://157.245.232.230:4000/#/'> Website</a>
+								</div>
+							</div>
+						</div>
 								<!-- <div class="col-4 col-12-mobile">
 									<article class="item">
 										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
@@ -157,6 +161,10 @@
 									<img class='skill-icons' src='/images/icons/redux.png' title='Redux' alt='Redux' height="60px"/>
 								</div>
 								<div class='label-icon-container'>
+									<p class='skill-labels'>Jest</p>
+									<img class='skill-icons' src='/images/icons/jest.png' title='Jest' alt='Jest' height="60px"/>
+								</div>
+								<div class='label-icon-container'>
 									<p class='skill-labels'>TypeScript</p>
 									<img class='skill-icons' src='/images/icons/typescript.svg' title='TypeScript' alt='TypeScript' height="60px"/>
 								</div>
@@ -195,6 +203,10 @@
 								<div class='label-icon-container'>
 									<p class='skill-labels'>Material UI</p>
 									<img class='skill-icons' src='/images/icons/material.png' title='Material UI' alt='Material UI' height="60px"/>
+								</div>
+								<div class='label-icon-container'>
+									<p class='skill-labels'>AWS S3</p>
+									<img class='skill-icons' src='/images/icons/aws-s3.svg' title='AWS S3 ' alt='AWS s3' height="60px"/>
 								</div>
 							</div>
 							<div class='skill-group-container'>
@@ -291,7 +303,7 @@
 										<i class='far fa-envelope fa-lg'></i><a href='mailto:derek.lamarr@gmail.com' class='email-link'> Send an email</a>
 									</li>
 									<li class="contact-link">
-										<i class='far fa-file-alt fa-lg'></i><a href='https://docs.google.com/document/d/1t_oRE7_diu0MAVcsr5WIQVX7usAmA-fz8DbVUhedfso/edit?usp=sharing' class='resume-link'> Resume</a>
+										<i class='far fa-file-alt fa-lg'></i><a href='https://docs.google.com/document/d/1t_oRE7_diu0MAVcsr5WIQVX7usAmA-fz8DbVUhedfso/edit?usp=sharing' class='resume-link'> View my Resume</a>
 									</li>
 								</ul>
 							<!-- </div> -->

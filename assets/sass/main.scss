@@ -18,7 +18,7 @@ $icon-color: #007892;
 // Breakpoints.
 
 	@include breakpoints((
-		wide:      ( 961px,  1880px ),
+		wide:      ( 961px,  1680px ),
 		normal:    ( 961px,  1620px ),
 		narrow:    ( 961px,  1320px ),
 		narrower:  ( 737px,  960px  ),

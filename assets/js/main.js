@@ -12,7 +12,7 @@
 
 	// Breakpoints.
 		breakpoints({
-			wide:      [ '961px',  '1680px' ],
+			wide:      [ '961px',  '1880px' ],
 			normal:    [ '961px',  '1620px' ],
 			narrow:    [ '961px',  '1320px' ],
 			narrower:  [ '737px',  '960px'  ],
